@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #8b5a2b; /* cork-brown frame */
+  font-family: Georgia, "Times New Roman", serif;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+.board {
+  width: 100%;
+  max-width: 560px;
+  background: #d9b382; /* cork */
+  border: 10px solid #5c3a1a;
+  padding: 24px;
+}
+h1 { margin: 0; font-size: 2.2rem; color: #2b1a0c; }
+.sub { margin: 4px 0 20px; color: #4a3220; }
+ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.pin {
+  background: #fffdf5;
+  padding: 12px 14px;
+  display: grid;
+  gap: 4px;
+  box-shadow: 2px 3px 0 rgba(43, 26, 12, 0.35);
+}
+.pin:nth-child(odd) { transform: rotate(-0.8deg); }
+.pin:nth-child(even) { transform: rotate(0.6deg); }
+.pin.event   { border-top: 6px solid #2e7d32; }
+.pin.meeting { border-top: 6px solid #1565c0; }
+.pin.holiday { border-top: 6px solid #c62828; }
+.tag { font-size: 0.8rem; color: #6b5440; }
+time { font-size: 0.9rem; color: #4a3220; }
+.muted { color: #2b1a0c; }
